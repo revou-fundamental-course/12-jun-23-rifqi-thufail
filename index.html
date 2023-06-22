@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Konverter Suhu by rifqi-thufail</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -15,7 +15,7 @@
           konversi.
         </h2>
       </div>
-      <div class="tempRow">
+      <div class="tempRow" id="tempRow">
         <div>
           <p>Masukkan suhu Celcius(°C)</p>
           <textarea
@@ -42,8 +42,8 @@
           onclick="convertButtonClick();displayEquation();">
           Konversi
         </button>
-        <button id="resetButton" onclick="reverseBtn()">Reset</button>
-        <button>Reverse</button>
+        <button id="resetButton" onclick="resetBtnClick()">Reset</button>
+        <button id="reverseButton" onclick="reverseBtn()">Reverse</button>
       </div>
 
       <div class="tempExplain">
