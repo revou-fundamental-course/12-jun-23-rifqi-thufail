@@ -17,7 +17,7 @@
       rows="10"
       placeholder="Suhu Celcius"></textarea>
     <br />
-    <button onclick="calculateFahrenheit();calculateCelsius()">Konversi</button>
+    <button onclick="convertButtonClick()">Konversi</button>
     <button>Reset</button>
     <button>Reverse</button>
     <p>Masukkan suhu Fahrenheit(°F)</p>
@@ -28,20 +28,6 @@
       rows="10"
       placeholder="Suhu Fahrenheit"></textarea>
 
-    <script>
-      // Calculate Celsius from Fahrenheit
-      function calculateCelsius() {
-        let suhuFahrenheit = document.getElementById("inputFahrenheit").value;
-        let suhuCelcius = (suhuFahrenheit - 32) / 1.8;
-        document.getElementById("inputCelcius").placeholder = suhuCelcius;
-      }
-
-      // Calculate Fahrenheit from Celsius
-      function calculateFahrenheit() {
-        let suhuCelcius = document.getElementById("inputCelcius").value;
-        let suhuFahrenheit = suhuCelcius * 1.8 + 32;
-        document.getElementById("inputFahrenheit").placeholder = suhuFahrenheit;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
