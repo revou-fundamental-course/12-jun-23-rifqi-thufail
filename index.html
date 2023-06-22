@@ -6,28 +6,57 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <p>
-      Masukkan suhu derajat Celsius (°C) ke kotak di bawah, lalu klik tombol
-      Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).
-    </p>
-    <textarea
-      id="inputCelcius"
-      name="paragraph_text"
-      cols="50"
-      rows="10"
-      placeholder="Suhu Celcius"></textarea>
-    <br />
-    <button onclick="convertButtonClick()">Konversi</button>
-    <button>Reset</button>
-    <button>Reverse</button>
-    <p>Masukkan suhu Fahrenheit(°F)</p>
-    <textarea
-      id="inputFahrenheit"
-      name="paragraph_text"
-      cols="50"
-      rows="10"
-      placeholder="Suhu Fahrenheit"></textarea>
+    <div class="background-image"></div>
+    <div class="mainCard">
+      <div class="heading">
+        <h1>Konverter Temperatur</h1>
+        <h2>
+          Masukkan suhu, klik tombol "Konversi" untuk mendapatkan hasil
+          konversi.
+        </h2>
+      </div>
+      <div class="tempRow">
+        <div>
+          <p>Masukkan suhu Celcius(°C)</p>
+          <textarea
+            id="inputCelcius"
+            name="paragraph_text"
+            cols="40"
+            rows="2"
+            placeholder="Suhu Celcius"></textarea>
+        </div>
+        <div>
+          <p>Masukkan suhu Fahrenheit(°F)</p>
+          <textarea
+            id="inputFahrenheit"
+            name="paragraph_text"
+            cols="40"
+            rows="2"
+            placeholder="Suhu Fahrenheit"></textarea>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="buttonRow">
+        <button
+          id="convertButton"
+          onclick="convertButtonClick();displayEquation();">
+          Konversi
+        </button>
+        <button id="resetButton" onclick="reverseBtn()">Reset</button>
+        <button>Reverse</button>
+      </div>
+
+      <div class="tempExplain">
+        <h2>Rumus yang digunakan :</h2>
+        <textarea
+          id="tempEquation"
+          name="paragraph_text"
+          cols="40"
+          rows="2"
+          placeholder="Rumus"></textarea>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
